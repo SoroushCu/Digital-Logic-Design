@@ -1,0 +1,1 @@
+`timescale 1ns/1nsmodule Q9ShifRegisterTB();  logic [7:0] PI = 8'b10010100;  logic si = 0 , CLK = 0;  wire [7:0] PO;  Q9ShiftRegister UUT(PI, CLK, si, PO);  always #40 CLK = ~CLK; initial begin  #800 $stop; endendmodule

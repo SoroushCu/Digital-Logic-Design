@@ -1,0 +1,1 @@
+`timescale 1ns/1nsmodule Q10LFSRTB();  logic [7:0] PI = 8'b10010100;  logic CLK = 0;  wire [7:0] PO;  Q10LFSR UUT(PI,CLK,PO);  always #40 CLK = ~CLK; initial begin  #20500 $stop; endendmodule
